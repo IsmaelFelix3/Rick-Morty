@@ -1,0 +1,25 @@
+<button pButton 
+        type="button" 
+        label="Regresar" 
+        icon="pi pi-arrow-left" 
+        class="p-button-raised p-button-rounded p-button-danger float-end flotar"
+        (click)="regresar()">
+
+</button>
+
+<p-card [header]="episodio.name" 
+styleClass="p-card-shadow">
+
+    <strong>Episodio: </strong><pre>{{episodio.id}}</pre>
+    <strong>Fecha estreno: </strong><pre>{{episodio.air_date}}</pre>
+    <strong>Fecha creacion: </strong><pre>{{episodio.created}}</pre>
+    <strong>Episodio: </strong><pre>{{episodio.episode}}</pre>
+    <strong>Url: </strong><pre>{{episodio.url}}</pre>
+
+    <div> 
+        <h3><strong>Personajes que aparecen en el episodio </strong></h3>
+        <p-divider></p-divider>
+            <td><app-mini-tarjeta [ids]="ids"></app-mini-tarjeta></td>
+    </div>
+
+</p-card>

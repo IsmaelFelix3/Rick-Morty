@@ -1,0 +1,18 @@
+<div class="grid">
+
+    <div class="col-4" *ngFor="let personaje of personajes">
+
+        <p-card [style]="{'width': '15rem'}"
+                [header]="personaje.name"  
+                styleClass="p-card-shadow">
+    
+            <ng-template pTemplate="header">
+                <img alt="Card" [src]="personaje.image">
+            </ng-template>
+    
+        </p-card>
+    
+    </div>
+
+</div>
+

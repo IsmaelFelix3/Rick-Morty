@@ -1,0 +1,12 @@
+<p-card 
+        [header]="personaje.name"  
+        styleClass="p-card-shadow">
+        <ng-template pTemplate="header">
+            <img alt="Card" [src]="personaje.image">
+        </ng-template>
+
+    <pre>Genero: {{personaje.gender}}</pre>
+    <pre>Vive: {{personaje.location.name}}</pre>
+    <pre>Episodio: {{episode}}</pre>
+
+</p-card>

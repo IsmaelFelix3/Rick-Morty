@@ -1,0 +1,20 @@
+
+
+        <p-card [header]="episodio.name"  
+                styleClass="p-card-shadow">
+
+            <pre>Fecha estreno: {{episodio.air_date}}</pre>
+            <pre>Episodio: {{episodio.episode}}</pre>
+
+            <button pButton 
+                    type="button" 
+                    label="info" 
+                    icon="pi pi-plus" 
+                    class="p-button-rounded"
+                    [routerLink]="['/home/detalle', episodio.id]">
+            </button>
+
+        </p-card>
+
+
+

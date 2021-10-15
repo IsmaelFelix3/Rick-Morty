@@ -1,0 +1,10 @@
+<p-card 
+        [header]="ubicaciones.name"  
+        styleClass="p-card-shadow">
+    <pre>Tipo: {{ubicaciones.type}}</pre>
+    <pre>Dimensión: {{ubicaciones.dimension}}</pre>
+    <pre>Poblacion: {{ubicaciones.residents.length}}</pre>
+    <pre>Fecha creacion: {{ubicaciones.created | date:'longDate'}}</pre>
+
+
+</p-card>

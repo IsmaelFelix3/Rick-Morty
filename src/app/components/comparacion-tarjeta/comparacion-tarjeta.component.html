@@ -1,0 +1,30 @@
+
+<div class="grid">
+
+
+        <p-card class="col-4" *ngFor="let personaje of personajes"
+            [header]="personaje.name"  
+            styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" [src]="personaje.image">
+            </ng-template>
+    
+            <pre>{{personaje.gender}}</pre>
+            <pre>{{personaje.location.name}}</pre>
+            <pre>{{personaje.species}}</pre>
+            <pre>{{personaje.status}}</pre>
+    
+        </p-card>
+        
+
+</div>
+
+<p-card header="Capitulos compartidos">
+    <pre class="text-layout">{{personaje1}} comparte {{comparacion12.length}} episodios con {{personaje2}}</pre>
+    
+    <pre class="text-layout">{{personaje1}} comparte {{comparacion13.length}} episodios con {{personaje3}}: </pre>
+
+    <pre class="text-layout">{{personaje2}} comparte {{comparacion23.length}} episodios con {{personaje3}}: </pre>
+</p-card>
+    
+  
